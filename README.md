@@ -42,3 +42,26 @@ source venv/Scripts/activate
 pip install -r requirements.txt
 ```
 
+### Шаг 4
+Выполнить миграции
+```bash
+python manage.py migrate
+```
+
+### Шаг 5
+Создать суперпользователя
+```bash
+python manage.py createsuperuser
+```
+
+### Шаг 5
+Запустить сервер
+```bash
+python manage.py runserver
+```
+
+Проект запустился на http://127.0.0.1:8000/
+
+Полная документация для API после установки доступна по адресу http://localhost:8000/redoc/
+
+С помощью команды pytest можно запустить тесты и проверить работу модулей
